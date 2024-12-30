@@ -6,9 +6,9 @@ body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 380px;
     min-height: 100vh;
-    background-color: brown;
+    background-color: #8C2F39;
     align-items: center;
     padding-top: 20px;
 }
@@ -16,6 +16,7 @@ body{
 form{
     display: flex;
     flex-direction: column;
+    margin-bottom: 70px;
 }
 
 label > h2{
@@ -42,6 +43,18 @@ input{
 }
 
 select{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     text-align: center;
+}
+
+.add{
+    background-color: #B23A48;
+    font-size: 2rem;
+    border-radius: 15px;
+    height: 75px;
+    width: 200px;
+}
+
+.add:hover{
+    background-color: #FCB9B2;
 }
