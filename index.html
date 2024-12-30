@@ -11,14 +11,17 @@
     <div class="sidebar">
         <h1>My Library</h1>
         <form id="form">
-            <label for="title"><h2>Title</h2></label>
-            <input type="text" name="title" id="title">
-
-            <label for="author"><h2>Author</h2></label>
-            <input type="text" name="author" id="author">
-
-            <label for="pages"><h2>Pages</h2></label>
-            <input type="number" name="pages" id="pages" min="1" required>
+            <div class="info">
+                <label for="title"><h2>Title</h2></label>
+                <input type="text" name="title" id="title">
+    
+                <label for="author"><h2>Author</h2></label>
+                <input type="text" name="author" id="author">
+    
+                <label for="pages"><h2>Pages</h2></label>
+                <input type="number" name="pages" id="pages" min="1" required>
+            </div>
+            
             
             <div class="status">
                 <label for="status"><h2>Status</h2></label>
@@ -29,6 +32,7 @@
                 </select>
             </div>
         </form>
+        <button class="add">Add Book</button>
     </div>
 </body>
 </html>
