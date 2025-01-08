@@ -7,7 +7,7 @@ body{
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 400px;
     min-height: 100vh;
     background-color: #8C2F39;
     align-items: center;
@@ -57,4 +57,38 @@ select{
 
 .add:hover{
     background-color: #FCB9B2;
+}
+
+.book-table-container{
+    width: 100%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    width: 300px;
+    border: 5px solid #051014;
+    border-top: 0;
+}
+
+th:nth-child(1), td:nth-child(1){
+    border-left: 0;
+}
+
+th:nth-child(5), td:nth-child(5){
+    border-right: 0;
+}
+
+thead > tr > th{
+    font-size: 2.5rem;
+    height: 90px;
+}
+
+td{
+    height: 70px;
+    text-align: center;
+    font-size: 1.5rem;
 }
