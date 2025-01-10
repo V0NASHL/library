@@ -59,6 +59,19 @@ select{
     background-color: #FCB9B2;
 }
 
+.remove{
+    border-style: none;
+    height: 40px;
+    width: 150px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.remove:hover{
+    background-color: red;
+    color: white;
+}
+
 .book-table-container{
     width: 100%;
 }
