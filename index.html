@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <h1 style="padding-top: 30px;">My Library</h1>
+        <h1 style="padding-top: 30px; font-size: 2.5rem;">My Library</h1>
         <form id="form">
             <div class="info">
                 <label for="title"><h2>Title</h2></label>
@@ -26,13 +26,30 @@
             <div class="status">
                 <label for="status"><h2>Status</h2></label>
                 <select name="status" id="status">
-                    <option value="not">Not Read</option>
-                    <option value="current">Currently Reading</option>
-                    <option value="complete">Read</option>
+                    <option value="Not Read">Not Read</option>
+                    <option value="Currently Reading">Currently Reading</option>
+                    <option value="Read">Read</option>
                 </select>
             </div>
         </form>
-        <button class="add">Add Book</button>
+        <button type="submit" class="add" onclick="addBookToLibrary()">Add Book</button>
     </div>
+
+    <div class="book-table-container">
+        <table id="tableData">
+            <thead style="background-color: #A9927D; color: #F2F4F3;">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
 </body>
 </html>
