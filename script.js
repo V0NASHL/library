@@ -9,7 +9,7 @@ function Book(title, author, pages, read){
 
 function render(){
     let table = document.getElementById("tableData").getElementsByTagName("tbody")[0];
-    table.innerHTML = ""; 
+    table.innerHTML = "";
 
     for (let i = 0; i < myLibrary.length; i++) {
         let bookInfo = myLibrary[i];
@@ -38,7 +38,7 @@ function addBookToLibrary(){
     let title = document.getElementById("title").value;
     let author = document.getElementById("author").value;
     let pages = document.getElementById("pages").value;
-    let read = document.getElementById("status").value
+    let read = document.getElementById("status").value;
 
     let newBook = new Book(title, author, pages, read);
 
